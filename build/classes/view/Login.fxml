@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.LoginController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #0b274b;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="186.0" fitWidth="163.0" layoutX="94.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/drogacia%20branca.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #f9f9f9;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtUsuario" layoutX="100.0" layoutY="213.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #29D2C2; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="txtSenha" layoutX="100.0" layoutY="260.0" promptText="Senha" style="-fx-background-color: transparent; -fx-border-color: #29D2C2; -fx-border-width: 0px 0px 2px 0px;" />
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="53.0" layoutY="208.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../resources/users%20menor.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="53.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/chave.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnlogar" layoutX="137.0" layoutY="344.0" mnemonicParsing="false" onAction="#logar" prefHeight="31.0" prefWidth="73.0" style="-fx-background-color: #29D2C2; -fx-cursor: hand;" text="Login">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="idSenhaEsquecida" layoutX="115.0" layoutY="426.0" onAction="#esqueceuASenha" text="Esqueceu sua senha?" />
+            <ImageView fitHeight="67.0" fitWidth="69.0" layoutX="140.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/cadeado.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="idAbrirCadastro" layoutX="99.0" layoutY="462.0" onAction="#abrirTelaDoCadastro" text="Cadastrar novo funcionário" />
+            <Text fill="#29d2c2" layoutX="94.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login de funcionário">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="idfechar" layoutX="284.0" layoutY="14.0" mnemonicParsing="false" onAction="#fecharAba" style="-fx-background-color: transparent; -fx-border-color: #29D2C2; -fx-border-radius: 5px; -fx-border-width: 2px 0px 2px 0px; -fx-cursor: hand;" text="Fechar" textFill="#29d2c2" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
