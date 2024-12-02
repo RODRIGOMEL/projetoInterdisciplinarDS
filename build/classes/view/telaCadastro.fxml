@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.TelaCadastroController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #f9f9f9;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="103.0" layoutX="124.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/users.png" />
+               </image>
+            </ImageView>
+            <Text fill="#02d2c2" layoutX="82.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de funcionários">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nomeFunc" layoutX="30.0" layoutY="155.0" prefHeight="28.0" prefWidth="238.0" promptText="Nome do funcionário" style="-fx-background-color: transparent; -fx-border-color: #02d2c2; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="CPFfunc" layoutX="30.0" layoutY="243.0" promptText="CPF do funcionário" style="-fx-background-color: transparent; -fx-border-color: #02d2c2; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="dataNascFunc" layoutX="30.0" layoutY="333.0" promptText="Data de nascimento" style="-fx-background-color: transparent; -fx-border-color: #02d2c2; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="senhaFunc" layoutX="30.0" layoutY="199.0" promptText="Senha do funcionário" style="-fx-background-color: transparent; -fx-border-color: #02d2c2; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="btnCadastrar" layoutX="30.0" layoutY="456.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="30.0" prefWidth="88.0" style="-fx-background-color: #02d2c2; -fx-cursor: hand;" text="Cadastrar">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="cargoFunc" layoutX="30.0" layoutY="289.0" promptText="Cargo do funcionário" style="-fx-background-color: transparent; -fx-border-color: #02d2c2; -fx-border-width: 0px 0px 2px 0px;" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #0b274b;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="186.0" fitWidth="163.0" layoutX="93.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/drogacia%20branca.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="encerrarCadastro" layoutX="284.0" layoutY="14.0" mnemonicParsing="false" onAction="#fecharJanela" style="-fx-background-color: transparent; -fx-border-color: #02d2c2; -fx-border-width: 2px 0px 2px 0px; -fx-border-radius: 5px; -fx-cursor: hand;" text="Fechar" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

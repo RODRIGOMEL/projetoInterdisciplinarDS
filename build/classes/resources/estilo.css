@@ -1,0 +1,76 @@
+
+/*efeito nos botoes quando sao pressionados*/
+.button:pressed {
+    -fx-background-color:  #29D2C2; 
+    -fx-border-color:  #29D2C2; /* Borda mais clara ao pressionar */
+    -fx-scale-x: 0.95; /* Diminui a largura */
+    -fx-scale-y: 0.95; /* Diminui a altura */
+}
+
+@font-face {
+    font-family: 'Koulen';
+    src: url('/resources/Koulen-Regular.ttf');
+}
+
+.label {
+    -fx-font-family: 'Koulen';
+}
+
+.Hyperlink {
+    -fx-font-family: 'Koulen';
+}
+
+
+
+/* Estilizando a cabeçalho da tabela */
+.table-view .column-header {
+    -fx-background-color: #29D2C2;  /* Cor de fundo do cabeçalho */
+    -fx-text-fill: white;           /* Cor do texto do cabeçalho */
+    -fx-font-weight: bold;          /* Fonte em negrito */
+    -fx-alignment: CENTER;          /* Alinhamento centralizado */
+}
+
+/* Estilizando as células de dados */
+.table-view .table-cell {
+    -fx-padding: 5px;               /* Espaçamento interno das células */
+    -fx-font-size: 14px;            /* Tamanho da fonte */
+    -fx-text-fill: #333333;         /* Cor do texto */
+}
+
+/* Estilizando as células selecionadas */
+.table-view .table-cell:selected {
+    -fx-background-color: #4CAF50;  /* Cor de fundo da célula selecionada */
+    -fx-text-fill: white;           /* Cor do texto da célula selecionada */
+}
+
+/* Estilizando as linhas da tabela */
+.table-view .row-cell {
+    -fx-border-color: #e0e0e0;      /* Cor da borda das linhas */
+    -fx-border-width: 0 0 1px 0;    /* Apenas a borda inferior */
+}
+
+/* Estilizando as linhas alternadas */
+.table-view .row-cell:nth-child(even) {
+    -fx-background-color: #f1f1f1;  /* Cor de fundo das linhas alternadas */
+}
+
+/* Estilizando o ComboBox */
+.combo-box {
+    -fx-background-color: #29D2C2; /* Cor de fundo */
+    -fx-text-fill: white; /* Cor do texto */
+    -fx-font-weight: bold; /* Fonte em negrito */
+    -fx-font-size: 14px; /* Tamanho da fonte */
+    -fx-border-color: #1D9A92; /* Cor da borda (opcional) */
+    -fx-border-width: 2px; /* Largura da borda (opcional) */
+}
+
+/* Estilizando o menu suspenso (opcional) */
+.combo-box .list-cell {
+    -fx-background-color: #29D2C2;
+    -fx-text-fill: white;
+}
+
+/* Estilizando o item selecionado */
+.combo-box .combo-box-popup {
+    -fx-background-color: #29D2C2;
+}

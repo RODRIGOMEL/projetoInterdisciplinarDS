@@ -1,0 +1,47 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'projetoDrogaria.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0icHJvamV0b0Ryb2dhcmlhLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPnByb2pldG9Ecm9nYXJpYTwvdGl0bGU+DQogICAgPHZlbmRvcj5BZG1pbjwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBqYXZhLXZtLWFyZ3M9Ii1YbXMyNTZtIC1YbXgxMDI0bSAiICBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJsaWJcbXlzcWwtY29ubmVjdG9yLWphdmEtNS4xLjYtYmluLmphciIgc2l6ZT0iNzAzMjY1IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJwcm9qZXRvRHJvZ2FyaWEuamFyIiBzaXplPSI3OTAyMzMiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJjb250cm9sLk1haW4iICBuYW1lPSJwcm9qZXRvRHJvZ2FyaWEiIC8+DQogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPg0KPC9qbmxwPg0K'
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-Xms256m -Xmx1024m '
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedcontrol() {
+        dtjava.embed(
+            {
+                id : 'control',
+                url : 'projetoDrogaria.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0icHJvamV0b0Ryb2dhcmlhLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPnByb2pldG9Ecm9nYXJpYTwvdGl0bGU+DQogICAgPHZlbmRvcj5BZG1pbjwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBqYXZhLXZtLWFyZ3M9Ii1YbXMyNTZtIC1YbXgxMDI0bSAiICBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJsaWJcbXlzcWwtY29ubmVjdG9yLWphdmEtNS4xLjYtYmluLmphciIgc2l6ZT0iNzAzMjY1IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJwcm9qZXRvRHJvZ2FyaWEuamFyIiBzaXplPSI3OTAyMzMiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJjb250cm9sLk1haW4iICBuYW1lPSJwcm9qZXRvRHJvZ2FyaWEiIC8+DQogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPg0KPC9qbmxwPg0K'
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-Xms256m -Xmx1024m '
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedcontrol);
+</script>
+
+</head><body>
+<h2>Test page for <b>projetoDrogaria</b></h2>
+  <b>Webstart:</b> <a href='projetoDrogaria.jnlp' onclick="return launchApplication('projetoDrogaria.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

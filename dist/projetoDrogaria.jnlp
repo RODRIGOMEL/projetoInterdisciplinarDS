@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="projetoDrogaria.jnlp">
+  <information>
+    <title>projetoDrogaria</title>
+    <vendor>Admin</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Xms256m -Xmx1024m "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\mysql-connector-java-5.1.6-bin.jar" size="703265" download="eager" />
+    <jar href="projetoDrogaria.jar" size="790233" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="control.Main"  name="projetoDrogaria" />
+  <update check="always"/>
+</jnlp>
