@@ -13,7 +13,9 @@
 do mysql (mysql-connector-java-5.1.6-bin.jar), então caso sua plataforma não reconheça o conector, adicione-o manualmente.
 
 certifique-se também que possui o plugin do javaFX instalado no seu netbeans (JavaFX 2 - version 1.42)
-</b>
+
+Para subir a base de dados do projeto, selecione a pasta de banco de dados e importe o arquivo .sql no XAMPP, (instale o xampp, no control panel do xampp ative as opções "apache" e "mysql", vá para "localhost" na sua barra de pesquisa do navegador, depois clique na opção "phpmyadmin" na aba de cima, depois clique em importar na aba de cima e selecione o arquivo .sql do banco, após isso a base de dados irá funcionar normalmente")
+</b>cd
 
 </p>
 
